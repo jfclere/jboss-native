@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/assembly-1.0.0.xsd">
+  <id>jar</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+
+  <files>
+        <!-- macosx intel 64 bits -->
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/x64/libapr-1.dylib</source>
+            <outputDirectory>lib/macosx-x86_64</outputDirectory>
+            <destName>libapr-1.jnilib</destName>
+        </file>
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/x64/libcrypto.dylib</source>
+            <outputDirectory>lib/macosx-x86_64</outputDirectory>
+            <destName>libcrypto.jnilib</destName>
+        </file>
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/x64/libssl.dylib</source>
+            <outputDirectory>lib/macosx-x86_64</outputDirectory>
+            <destName>libssl.jnilib</destName>
+        </file>
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/x64/libtcnative-1.dylib</source>
+            <outputDirectory>lib/macosx-x86_64</outputDirectory>
+            <destName>libtcnative-1.jnilib</destName>
+        </file>
+
+        <!-- macosx intel 32 bits -->
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/i386/libapr-1.dylib</source>
+            <outputDirectory>lib/macosx-i686</outputDirectory>
+            <destName>libapr-1.jnilib</destName>
+        </file>
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/i386/libcrypto.dylib</source>
+            <outputDirectory>lib/macosx-i686</outputDirectory>
+            <destName>libcrypto.jnilib</destName>
+        </file>
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/i386/libssl.dylib</source>
+            <outputDirectory>lib/macosx-i686</outputDirectory>
+            <destName>libssl.jnilib</destName>
+        </file>
+        <file>
+            <source>src/main/resources/bin/META-INF/lib/macosx/i386/libtcnative-1.dylib</source>
+            <outputDirectory>lib/macosx-i686</outputDirectory>
+            <destName>libtcnative-1.jnilib</destName>
+        </file>
+  </files>
+
+  <fileSets>
+    <!-- linux intel 32 bits -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/linux2/x86</directory>
+      <includes>
+        <include>libapr-1.so</include>
+        <include>libcrypto.so</include>
+        <include>libssl.so</include>
+        <include>libtcnative-1.so</include>
+      </includes>
+      <outputDirectory>lib/linux-i686</outputDirectory>
+    </fileSet>
+
+    <!-- linux intel 64 bits -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/linux2/x64</directory>
+      <includes>
+        <include>libapr-1.so</include>
+        <include>libcrypto.so</include>
+        <include>libssl.so</include>
+        <include>libtcnative-1.so</include>
+      </includes>
+      <outputDirectory>lib/linux-x86_64</outputDirectory>
+    </fileSet>
+
+    <!-- win32 -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/windows/x86</directory>
+      <includes>
+        <include>tcnative-1.dll</include>
+      </includes>
+      <outputDirectory>lib/win-i686</outputDirectory>
+    </fileSet>
+
+    <!-- win64 -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/windows/x64</directory>
+      <includes>
+        <include>tcnative-1.dll</include>
+      </includes>
+      <outputDirectory>lib/win-x86_64</outputDirectory>
+    </fileSet>
+    <!-- HPUX i64 -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/hpux/i64</directory>
+      <includes>
+        <include>libapr-1.sl</include>
+        <include>libcrypto.sl</include>
+        <include>libssl.sl</include>
+        <include>libtcnative-1.sl</include>
+      </includes>
+      <outputDirectory>lib/hpux-i64</outputDirectory>
+    </fileSet>
+    <!-- Solaris10/11 sparc -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/solaris10/sparc</directory>
+      <includes>
+        <include>libapr-1.sl</include>
+        <include>libcrypto.sl</include>
+        <include>libssl.sl</include>
+        <include>libtcnative-1.sl</include>
+      </includes>
+      <outputDirectory>lib/solaris-sparc</outputDirectory>
+    </fileSet>
+    <!-- Solaris10/11 sparc64 -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/solaris10/sparcv9</directory>
+      <includes>
+        <include>libapr-1.sl</include>
+        <include>libcrypto.sl</include>
+        <include>libssl.sl</include>
+        <include>libtcnative-1.sl</include>
+      </includes>
+      <outputDirectory>lib/solaris-sparcv9</outputDirectory>
+    </fileSet>
+    <!-- Solaris10/11 x64 -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/solaris10/x64</directory>
+      <includes>
+        <include>libapr-1.sl</include>
+        <include>libcrypto.sl</include>
+        <include>libssl.sl</include>
+        <include>libtcnative-1.sl</include>
+      </includes>
+      <outputDirectory>lib/solaris-x86_64</outputDirectory>
+    </fileSet>
+    <!-- Solaris10/11 x86 -->
+    <fileSet>
+      <directory>src/main/resources/bin/META-INF/lib/solaris10/x86</directory>
+      <includes>
+        <include>libapr-1.sl</include>
+        <include>libcrypto.sl</include>
+        <include>libssl.sl</include>
+        <include>libtcnative-1.sl</include>
+      </includes>
+      <outputDirectory>lib/solaris-i686</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

@@ -1,0 +1,17 @@
+jboss-native-1.0.0-solaris-sun4v-ssl.tar.gz
+jboss-native-1.0.0-solaris64-sun4v-ssl.tar.gz
+jboss-native-1.0.0-solaris-sparcv9-ssl.tar.gz
+jboss-native-1.0.0-solaris64-sparcv9-ssl.tar.gz
+jboss-native-1.0.0-solaris9-x86-ssl.tar.gz
+jboss-native-1.0.0-solaris10-x86-ssl.tar.gz
+jboss-native-1.0.0-solaris10-x64-ssl.tar.gz
+jboss-native-1.0.0-hpux-parisc2-ssl.tar.gz
+jboss-native-1.0.0-hpux64-parisc2-ssl.tar.gz
+jboss-native-1.0.0-hpux-i64-ssl.tar.gz
+jboss-native-1.0.0-linux2-x86-ssl.tar.gz
+#jboss-native-1.0.0-linux2-i64-ssl.tar.gz
+jboss-native-1.0.0-linux2-x64-ssl.tar.gz
+jboss-native-1.0.0-macosx-x86-ssl.tar.gz
+jboss-native-1.0.0-macosx-x64-ssl.tar.gz
+jboss-native-1.0.0-windows-amd64-ssl.zip
+jboss-native-1.0.0-windows-x86-ssl.zip
